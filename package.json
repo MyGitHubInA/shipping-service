@@ -1,20 +1,21 @@
 {
-  "name": "shipping-service",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "shipping-service-36",
+  "version": "0.0.1",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+      "test": "jest tests",
+      "start": "node src/app.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/MyGitHubInA/shipping-service.git"
+  "engines": {
+      "node": "8.11.3",
+      "npm": "5.6.x"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/MyGitHubInA/shipping-service/issues"
+  "dependencies": {
+      "axios": "^0.18.0",
+      "express": "^4.16.3"
   },
-  "homepage": "https://github.com/MyGitHubInA/shipping-service#readme"
+  "devDependencies": {
+      "nock": "^9.4.2",
+      "sinon": "^6.1.3"
+  }
 }
